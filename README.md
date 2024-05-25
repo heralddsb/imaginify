@@ -1,18 +1,23 @@
 # AI Image Platform Micro SaaS
 
-## Tech Stack
+## ⚙️ Tech Stack
 
-- Next JS 14
-- MongoDB
+- Next.js
 - TypeScript
-- ShadCN UI
-- Clerk - Authentication
+- MongoDB
+- Clerk
 - Cloudinary - Image and Video API
+- Stripe
+- Shadcn
+- TailwindCSS
 - Webhook
+
+## Live Demo
+[Imaginify Site Demo](https://imaginify-25052024-fep9uolfj-heralds-projects.vercel.app)
 
 ## Getting Started
 
-First, create the local environment file (.env.local) and insert the following variables
+First, create the **.env.local** file in the root directory of this project and insert the following variables
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
