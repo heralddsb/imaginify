@@ -1,5 +1,7 @@
 # AI Image Platform Micro SaaS
 
+AI Powered Image generator
+
 ## ⚙️ Tech Stack
 
 - Next.js
@@ -8,17 +10,17 @@
 - Clerk
 - Cloudinary - Image and Video API
 - Stripe
-- Shadcn
+- Shadcn UI
 - TailwindCSS
 - Webhook
 
 ## Live Demo
-[Imaginify Site Demo](https://imaginify-25052024-fep9uolfj-heralds-projects.vercel.app)
+🔗 [Imaginify Site Demo](https://imaginify-25052024-fep9uolfj-heralds-projects.vercel.app)
 
 ## Getting Started
 
-First, create the **.env.local** file in the root directory of this project and insert the following variables
-```bash
+🛠️ First, create the **.env.local** file in the root directory of this project and insert the following variables
+```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
@@ -33,16 +35,11 @@ MONGODB_URL=mongodb+srv://<username>:<password>@<host>.mongodb.net/?retryWrites=
 
 ```
 
-Second, run the development server:
+🚀 Second, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
