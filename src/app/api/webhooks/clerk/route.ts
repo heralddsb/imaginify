@@ -118,3 +118,10 @@ export async function POST(req: Request) {
 
   return new Response("", { status: 200 });
 }
+
+export async function GET(req: Request) {
+    const payload = await req.json();
+    const body = JSON.stringify(payload);
+    console.log("Display GET request payload ",payload);
+    return Response.json({ message: 'Route TSHello World!' })
+}

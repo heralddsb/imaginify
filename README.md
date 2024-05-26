@@ -7,19 +7,21 @@ AI Powered Image generator
 - Next.js
 - TypeScript
 - MongoDB
-- Clerk
+- Clerk - Auth, User Management
 - Cloudinary - Image and Video API
 - Stripe - Payment
-- Shadcn UI
+- [Shadcn UI](https://ui.shadcn.com/)
 - TailwindCSS
 - Svix - Webhook
+- [Ngrok - Webhook | Test locally](https://ngrok.com/)
 
 ## Live Demo
 🔗 [Imaginify Site Demo](https://imaginify-25052024-fep9uolfj-heralds-projects.vercel.app)
 
 ## Getting Started
 
- 🛠️ First, create the **.env.local** file in the root directory of this project and insert the following variables
+🔢 First, setup the local environment variables by creating the **.env.local** file
+
 ```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
@@ -35,7 +37,14 @@ MONGODB_URL=mongodb+srv://<username>:<password>@<host>.mongodb.net/?retryWrites=
 
 ```
 
-🚀 Second, run the development server:
+🧩 Second, install the dependencies:
+
+```bash
+npm install
+
+```
+
+🚀 Third, run the development server:
 
 ```bash
 npm run dev
@@ -44,9 +53,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Reference
+### 🔖 References
 
-- [Clerk Webhook Documentation](https://clerk.com/docs/integrations/webhooks/overview?_gl=1*1z07l0o*_gcl_au*MTExMDc1MzM0Ni4xNzE0NjY4NTI4)
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Clerk Webhooks getting started](https://clerk.com/blog/webhooks-getting-started)
+- [Clerk Webhook Documentation](https://clerk.com/docs/integrations/webhooks/overview?_gl=1*1z07l0o*_gcl_au*MTExMDc1MzM0Ni4xNzE0NjY4NTI4)
 - [Help to resolved the issue on Clerk Webhook](https://www.youtube.com/watch?v=UTjwyDuVjRM)
 - [Inspired by Adrian Hajdin's AI Image SaaS Project.](https://github.com/adrianhajdin/ai_saas_app)
