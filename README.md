@@ -44,10 +44,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Reference
 
+- [Clerk Webhook Documentation](https://clerk.com/docs/integrations/webhooks/overview?_gl=1*1z07l0o*_gcl_au*MTExMDc1MzM0Ni4xNzE0NjY4NTI4)
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 - [Help to resolved the issue on Clerk Webhook](https://www.youtube.com/watch?v=UTjwyDuVjRM)
 - [Inspired by Adrian Hajdin's AI Image SaaS Project.](https://github.com/adrianhajdin/ai_saas_app)
