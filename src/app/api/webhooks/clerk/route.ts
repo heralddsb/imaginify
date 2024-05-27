@@ -10,7 +10,8 @@ import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
-
+  console.log('HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
+  console.log("WEBHOOK_SECRET ",WEBHOOK_SECRET);
   if (!WEBHOOK_SECRET) {
     throw new Error(
       "Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local"
@@ -22,6 +23,9 @@ export async function POST(req: Request) {
   const svix_id = headerPayload.get("svix-id");
   const svix_timestamp = headerPayload.get("svix-timestamp");
   const svix_signature = headerPayload.get("svix-signature");
+  console.log("headerPayload ",headerPayload);
+  console.log("svix_id ",svix_id);
+  console.log("svix_signature ",svix_signature);
 
   // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
@@ -29,11 +33,13 @@ export async function POST(req: Request) {
       status: 400,
     });
   }
-
+  // Error on the verification
+  // Check the settings in Clerk of Webhook Events
+  // Search how to resolved the webhook events
   // Get the body
   const payload = await req.json();
   const body = JSON.stringify(payload);
-
+  console.log("Data payload ",payload);
   // Create a new Svix instance with your secret.
   const wh = new Webhook(WEBHOOK_SECRET);
 
