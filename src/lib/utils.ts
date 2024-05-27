@@ -155,3 +155,21 @@ export const deepMergeObjects = (obj1: any, obj2: any) => {
 
   return output;
 };
+
+export const generateUsernames = (firstName:String, lastName:String) => {
+
+  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+  const firstNameLower = firstName.toLowerCase();
+  const lastNameLower = lastName.toLowerCase();
+
+  let suffix = '';
+  for (let i = 0; i < 7; i++) {
+      const randomIndex = Math.floor(Math.random() * chars.length);
+      suffix += chars[randomIndex];
+  }
+  
+  const usernames =  firstNameLower + '.' + lastNameLower +'-'+suffix;
+  
+  return usernames;
+};

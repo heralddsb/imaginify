@@ -23,8 +23,10 @@ AI Powered Image generator
 🔢 First, setup the local environment variables by creating the `.env.local` file
 
 ```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<Clerk API - Publishable key>
+CLERK_SECRET_KEY=<Clerk API - Secret keys>
+WEBHOOK_SECRET=<Clerk Webhooks EndPoint - Signing Secret>
 
 # Clerk URLs
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
