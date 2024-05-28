@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,10 @@ import { Button } from "../ui/button";
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const handleLinkClick = () => {
+    setIsSheetOpen(false);
+  };
   return (
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
@@ -23,7 +28,7 @@ const MobileNav = () => {
       <nav className="flex gap-2">
         <SignedIn>
           <UserButton afterSignOutUrl="/" />
-          <Sheet>
+          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger>
               <Image
                 src="/assets/icons/menu.svg"
@@ -54,6 +59,7 @@ const MobileNav = () => {
                       >
                         <Link
                           className="sidebar-link cursor-pointer"
+                          onClick={handleLinkClick}
                           href={link.route}
                         >
                           <Image

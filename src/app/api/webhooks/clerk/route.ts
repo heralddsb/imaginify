@@ -66,12 +66,12 @@ export async function POST(req: Request) {
         console.log("Event Type: ",eventType);
         console.log("Event Data: ",payload);
 
-        const { id, email_addresses, image_url, first_name, last_name } = payload.data;
+        const { id, email_addresses, image_url, first_name, last_name, username } = payload.data;
         
         const user: CreateUserParams = {
         clerkId: id,
         email: email_addresses[0].email_address,
-        username: generateUsernames(first_name,last_name),
+        username: username!,
         firstName: first_name!,
         lastName: last_name!,
         photo: image_url,
