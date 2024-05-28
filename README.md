@@ -57,9 +57,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### 🔖 References
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs)
 - [Clerk Webhooks getting started](https://clerk.com/blog/webhooks-getting-started)
 - [Svix webhook quick start](https://docs.svix.com/quickstart)
 - [Clerk Webhook Documentation](https://clerk.com/docs/integrations/webhooks/overview?_gl=1*1z07l0o*_gcl_au*MTExMDc1MzM0Ni4xNzE0NjY4NTI4)
-- [Help to resolved the issue on Clerk Webhook](https://www.youtube.com/watch?v=UTjwyDuVjRM)
+- [Clerk - Create Route Matcher](https://clerk.com/docs/references/nextjs/clerk-middleware#create-route-matcher)
+- [Simple Implementation of Next JS and Clerk Webhook](https://www.youtube.com/watch?v=UTjwyDuVjRM)
 - [Inspired by Adrian Hajdin's AI Image SaaS Project.](https://github.com/adrianhajdin/ai_saas_app)
