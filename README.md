@@ -16,7 +16,7 @@ AI Powered Image generator
 - [Ngrok - Webhook | Test locally](https://ngrok.com/)
 
 ## Live Demo
-🔗 [Imaginify Site Demo](https://imaginify-25052024-fep9uolfj-heralds-projects.vercel.app)
+🔗 [Imaginify Site Demo](https://imaginify-25052024-heralds-projects.vercel.app)
 
 ## Getting Started
 
@@ -54,6 +54,12 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Challenges while building this project
+
+- Vercel and Clerk webhooks. Resolved by replacing the authMiddleware to clerkMiddleware.
+- Using Ngrok helps to trace the webhooks issue.
+- Update the environment variable of Vercel endpoint in Clerk.
 
 ### 🔖 References
 
