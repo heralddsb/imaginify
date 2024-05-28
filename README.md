@@ -17,6 +17,7 @@ AI Powered Image generator
 
 ## Live Demo
 🔗 [Imaginify Site Demo](https://imaginify-25052024-heralds-projects.vercel.app)
+🔗 [Imaginify Site Demo](https://imaginify-25052024-heralds-projects.vercel.app)
 
 ## Getting Started
 
