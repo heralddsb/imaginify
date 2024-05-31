@@ -16,7 +16,7 @@ AI Powered Image generator
 - [Ngrok - Webhook | Test locally](https://ngrok.com/)
 
 ## Live Demo
-🔗 [Imaginify Site Demo](https://imaginify-25052024-heralds-projects.vercel.app)
+
 🔗 [Imaginify Site Demo](https://imaginify-25052024-heralds-projects.vercel.app)
 
 ## Getting Started
