@@ -23,12 +23,15 @@ export async function createUser(user: CreateUserParams) {
 
 // READ
 export async function getUserById(userId: string) {
+  console.log("trigger getUserById:  ",userId);
   try {
     await connectToDatabase();
-
+    console.log("connecting to DB.... ");
     const user = await User.findOne({ clerkId: userId });
-
+    console.log("searching user.... ");
     if (!user) throw new Error("User not found");
+
+    console.log("User found: ",user);
 
     return JSON.parse(JSON.stringify(user));
   } catch (error) {
@@ -79,7 +82,7 @@ export async function deleteUser(clerkId: string) {
 export async function updateCredits(userId: string, creditFee: number) {
   try {
     await connectToDatabase();
-
+    console.log("updateCredits .... userId: ",userId," , creditFee: ",creditFee);
     const updatedUserCredits = await User.findOneAndUpdate(
       { _id: userId },
       { $inc: { creditBalance: creditFee }},

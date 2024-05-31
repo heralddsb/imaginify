@@ -5,8 +5,6 @@ import { Webhook } from "svix";
 import { buffer } from "micro";
 
 import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
-import { generateUsernames } from '../../../../lib/utils';
-
 
 export async function POST(req: Request) {
 
