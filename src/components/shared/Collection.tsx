@@ -19,6 +19,8 @@ import { Button } from "../ui/button";
 
 import { Search } from "./Search";
 
+type ImageArray = IImage[];
+
 export const Collection = ({
   hasSearch = false,
   images,
@@ -56,7 +58,7 @@ export const Collection = ({
       {images.length > 0 ? (
         <ul className="collection-list">
           {images.map((image) => (
-            <Card image={image} key={image._id} />
+            <Card image={image} key={image.publicId} />
           ))}
         </ul>
       ) : (
