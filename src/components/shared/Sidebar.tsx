@@ -49,7 +49,7 @@ const Sidebar = () => {
               })}
             </ul>
             <ul className="sidebar-nav_elements">
-              {navLinks.slice(6, 8).map((link) => {
+              {navLinks.slice(6, 9).map((link) => {
                 const isActive = link.route === pathname;
 
                 return (

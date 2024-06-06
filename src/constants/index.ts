@@ -39,6 +39,11 @@ export const navLinks = [
       route: "/credits",
       icon: "/assets/icons/bag.svg",
     },
+    {
+      label: "Roadmap",
+      route: "/roadmap",
+      icon: "/assets/icons/image.svg",
+    }
   ];
   
   export const plans = [
@@ -154,6 +159,24 @@ export const navLinks = [
       type: "recolor",
       title: "Object Recolor",
       subTitle: "Identify and recolor objects from the image",
+      config: {
+        recolor: { prompt: "", to: "", multiple: true },
+      },
+      icon: "filter.svg",
+    },
+    roadmap: {
+      type: "roadmap",
+      title: "Roadmap",
+      subTitle: "A high-level overview of our project's objectives, key milestones, and timeline for success.",
+      config: {
+        recolor: { prompt: "", to: "", multiple: true },
+      },
+      icon: "image.svg",
+    },
+    feedback: {
+      type: "feedback",
+      title: "Feedback",
+      subTitle: "We value your input! Share your feedback to help us improve our platform and better serve your needs.",
       config: {
         recolor: { prompt: "", to: "", multiple: true },
       },
